@@ -1,6 +1,7 @@
 # OnionChatF3nix
 
 OnionChatF3nix es una app de chat P2P sobre Tor (.onion), ligera y con interfaz de escritorio simple.
+<img width="1919" height="1005" alt="Captura de pantalla 2026-02-24 114152" src="https://github.com/user-attachments/assets/20e8fb2c-8361-4f8c-b34c-a622fa8ed2dc" />
 
 ## Caracteristicas
 - Chat en tiempo real sobre Tor.

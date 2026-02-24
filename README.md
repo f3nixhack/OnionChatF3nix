@@ -21,6 +21,37 @@ OnionChatF3nix es una app de chat P2P sobre Tor (.onion), ligera y con interfaz 
 3. Para hospedar: pulsa `Crear chat onion` y comparte tu direccion.
 4. Para conectar: pega una direccion `.onion` y pulsa `Conectar`.
 
+## Versionado (SemVer)
+Usa el esquema `vMAJOR.MINOR.PATCH`.
+
+- Primera version estable: `v1.0.0`
+- Cambios compatibles (nuevas funciones): sube `MINOR` (ej. `v1.1.0`)
+- Correcciones/bugs: sube `PATCH` (ej. `v1.1.1`)
+- Cambios incompatibles: sube `MAJOR` (ej. `v2.0.0`)
+
+Script incluido para crear tags:
+
+```powershell
+# Crea siguiente patch (si no hay tags, crea v1.0.0)
+.\scripts\release.ps1
+
+# Crea siguiente minor
+.\scripts\release.ps1 -Bump minor
+
+# Crea siguiente major
+.\scripts\release.ps1 -Bump major
+
+# Crear version exacta y subirla
+.\scripts\release.ps1 -Version v1.1.0 -Push
+```
+
+Ver releases/tags:
+
+```powershell
+git tag --list
+git push origin <tag>
+```
+
 ## Archivos generados
 - Descargas recibidas: `Downloads/OnionChatF3nix`
 - Build ejecutable: `dist/OnionChatF3nix.exe`

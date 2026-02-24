@@ -7,7 +7,7 @@ OnionChatF3nix es una app de chat P2P sobre Tor (.onion), ligera y con interfaz 
 - Chat en tiempo real sobre Tor.
 - Creacion de servicio onion efimero para recibir conexiones.
 - Conexion a otros peers por direccion `.onion`.
-- Envio de archivos hasta 5 MB.
+- Envio de archivos hasta 20 MB.
 - Deteccion automatica de SOCKS/ControlPort (9050/9150 y 9051/9151).
 - Tema claro y oscuro.
 
@@ -59,3 +59,4 @@ git push origin <tag>
 
 ## Aviso
 Este proyecto es para fines educativos. No uses esta herramienta para actividades ilegales.
+

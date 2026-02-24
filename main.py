@@ -37,7 +37,7 @@ class TorChatApp:
         self.controller = None
         self.onion_service_id = None
         self.incoming = queue.Queue()
-        self.max_file_size = 5 * 1024 * 1024  # 5 MB
+        self.max_file_size = 20 * 1024 * 1024  # 20 MB
 
         self.local_port = tk.IntVar(value=5000)
         self.socks_host = tk.StringVar(value="127.0.0.1")
